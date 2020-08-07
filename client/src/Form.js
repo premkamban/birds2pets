@@ -20,32 +20,31 @@ export default class Form extends Component {
 
     async handleSubmit(e) {
         e.preventDefault();
-        const { name, email, phone, service, message } = this.state;
-        await axios.post("/api/sendmail", {
+        const { name, email, phone, message } = this.state;
+        await axios.post("http://localhost:3001/api/sendmail", {
             name,
             email,
             phone,
-            service,
             message
-        });
+        }, { headers: { "Access-Control-Allow-Origin": "*" } });
         console.log(this.state);
         e.target.reset();
         this.setState({ name: "", phone: "", email: "", message: "" });
     }
     render() {
         return (
-            <form>
+            <form action="#" onSubmit={this.handleSubmit}>
                 <div className="form-group mb-4">
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="*Name" />
+                    <input type="text" className="form-control" name="name" id="exampleFormControlInput1" placeholder="*Name" />
                 </div>
                 <div className="form-group mb-4">
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="*Enter email" />
+                    <input type="email" className="form-control" name="email" id="exampleFormControlInput1" placeholder="*Enter email" />
                 </div>
                 <div className="form-group mb-4">
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="*Phone" />
+                    <input type="text" className="form-control" name="phone" id="exampleFormControlInput1" placeholder="*Phone" />
                 </div>
                 <div className="form-group">
-                    <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="*Enter your query" ></textarea>
+                    <textarea className="form-control" name="message" id="exampleFormControlTextarea1" placeholder="*Enter your query" ></textarea>
                 </div>
                 <button type="submit" className=" mt-3 btn-custom mt-3 mt-md-4 ml-md-4  btn btn-light">Submit</button>
             </form>

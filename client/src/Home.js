@@ -125,7 +125,7 @@ export default function Home() {
                             <div className="row no-gutters">
                                 <div className="col-lg-4 col-md-4 col-xs-6 thumb img-hover">
                                     <a className="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                                        data-image="img/banner-1.jpg"
+                                        data-image={require("./assert/img/banner-1.jpg")}
                                         data-target="#image-gallery">
                                         <img className="img-thumbnail image"
                                             src={require("./assert/img/banner-1.jpg")}
@@ -135,7 +135,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-xs-6 thumb img-hover">
                                     <a className="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                                        data-image="img/banner-2.jpg"
+                                        data-image={require("./assert/img/banner-2.jpg")}
                                         data-target="#image-gallery">
                                         <img className="img-thumbnail image"
                                             src={require("./assert/img/banner-2.jpg")}
@@ -145,7 +145,7 @@ export default function Home() {
 
                                 <div className="col-lg-4 col-md-4 col-xs-6 thumb img-hover">
                                     <a className="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                                        data-image="img/banner-3.jpg"
+                                        data-image={require("./assert/img/banner-3.jpg")}
                                         data-target="#image-gallery">
                                         <img className="img-thumbnail image"
                                             src={require("./assert/img/banner-3.jpg")}
@@ -154,7 +154,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-xs-6 thumb img-hover">
                                     <a className="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                                        data-image="img/banner-4.jpg"
+                                        data-image={require("./assert/img/banner-4.jpg")}
                                         data-target="#image-gallery">
                                         <img className="img-thumbnail image"
                                             src={require("./assert/img/banner-4.jpg")}
@@ -163,7 +163,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-xs-6 thumb img-hover">
                                     <a className="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                                        data-image="img/banner-5.jpg"
+                                        data-image={require("./assert/img/banner-5.jpg")}
                                         data-target="#image-gallery">
                                         <img className="img-thumbnail image"
                                             src={require("./assert/img/banner-5.jpg")}
@@ -172,7 +172,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-4 col-md-4 col-xs-6 thumb img-hover">
                                     <a className="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                                        data-image="img/banner-6.jpg"
+                                        data-image={require("./assert/img/banner-6.jpg")}
                                         data-target="#image-gallery">
                                         <img className="img-thumbnail image"
                                             src={require("./assert/img/banner-6.jpg")}
@@ -189,7 +189,7 @@ export default function Home() {
                                             </button>
                                         </div>
                                         <div className="modal-body">
-                                            <img id="image-gallery-image" className="img-fluid col-md-12" src="" />
+                                            <img id="image-gallery-image" className="img-fluid col-md-12" src="" alt="Modal" />
                                         </div>
                                         <div className="modal-footer">
                                             <button type="button" className="btn btn-secondary float-left" id="show-previous-image"><i className="fa fa-arrow-left"></i>
