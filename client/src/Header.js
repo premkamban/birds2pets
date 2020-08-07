@@ -22,7 +22,7 @@ export default class Header extends Component {
                             <div className="collapse navbar-collapse" id="navbarResponsive">
                                 <ul className="navbar-nav">
                                     <li className="nav-item active">
-                                        <a className="nav-link" href="#">Home
+                                        <a className="nav-link" href="/#">Home
                 <span className="sr-only">(current)</span>
                                         </a>
                                     </li>
@@ -30,16 +30,16 @@ export default class Header extends Component {
                                         <a className="nav-link" href="#abt">About us</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#our">Our Birds</a>
+                                        <a className="nav-link" href="/#our">Our Birds</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#care">Care Sheet</a>
+                                        <a className="nav-link" href="/#care">Care Sheet</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#gallery">Gallery</a>
+                                        <a className="nav-link" href="/#gallery">Gallery</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#test">Testimonials</a>
+                                        <a className="nav-link" href="/#test">Testimonials</a>
                                     </li>
                                     <li className="nav-item ct">
                                         <a className="nav-link nav-ct" href="#contact">Contact us</a>
