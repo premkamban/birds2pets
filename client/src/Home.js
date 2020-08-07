@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -90,7 +90,7 @@ export default function Home() {
                             <p className="o-reg mt-4">Please meet<br />
                                     our feathered<br />
                                         friend’s!</p>
-                            <Link to={`/meet`} data-aos="fade-up-right" target="_blank" className="btn btn-custom">Click here to meet them</Link>
+                            <Link to={`/meet`} data-aos="fade-up-right" className="btn btn-custom">Click here to meet them</Link>
                         </div>
                     </div>
                 </div>

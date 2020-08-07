@@ -8,6 +8,7 @@ export default class Header extends Component {
         };
         return (
             <React.Fragment>
+                <div className="preloader"></div>
                 <section className=" pb-5 mb-5 mb-lg-0  navbar-head ">
                     <nav className="navbar  navbar-expand-lg  fixed-top p-md-2 p-sm-2" data-aos="fade-down">
                         <div className="container">

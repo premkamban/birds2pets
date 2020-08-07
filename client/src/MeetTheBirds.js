@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './assert/css/style.css'
 
 export default class MeetTheBirds extends Component {
     render() {
@@ -13,6 +14,7 @@ export default class MeetTheBirds extends Component {
                         </div>
                     </div>
                 </section>
+
                 <section className="mb-5 m-t-b">
 
                     <h1 className="col-12 text-center section-title-6 mb-5 pb-md-5" data-aos="fade-up">Meet the birds</h1>
@@ -73,8 +75,7 @@ export default class MeetTheBirds extends Component {
                     <div className="container plan text-center">
                         <p>
                             <a className="btn btn-custom mb-5" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" data-aos="flip-down" aria-controls="collapseExample">
-                                We are also planning to have
-           </a>
+                                We are also planning to have</a>
                         </p>
                         <div className=" collapse row" id="collapseExample" >
                             <div className=" col-md-3 col-12 mb-4" >
@@ -104,14 +105,6 @@ export default class MeetTheBirds extends Component {
                         </div>
                     </div>
                 </section>
-                <script src="./externalForm.js" />
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-
-
             </React.Fragment>
         )
     }
