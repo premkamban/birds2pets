@@ -12,7 +12,7 @@ export default class Header extends Component {
                 <section className=" pb-5 mb-5 mb-lg-0  navbar-head ">
                     <nav className="navbar  navbar-expand-lg  fixed-top p-md-2 p-sm-2" data-aos="fade-down">
                         <div className="container">
-                            <a className="navbar-brand" href="#">
+                            <a className="navbar-brand" href="/#">
                                 <img src={require("./assert/img/logo.png")} className="img-fluid" style={style} alt="logo" />
                             </a>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@ export default class Header extends Component {
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#abt">About us</a>
+                                        <a className="nav-link" href="/#abt">About us</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="/#our">Our Birds</a>
