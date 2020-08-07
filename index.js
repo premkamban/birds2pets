@@ -15,7 +15,6 @@ app.post("/api/sendmail", (req, res) => {
     <li>Contact phone :${req.body.phone}</li>
     </ul>
     <h3>Message:</h3>
-    <li>Enquiry for service : ${req.body.service}</li>
     <p>${req.body.message}</p>`;
 
     let transporter = nodemailer.createTransport({
