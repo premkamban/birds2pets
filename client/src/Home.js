@@ -105,7 +105,7 @@ export default function Home() {
                                 <h1 className="text-md-left section-title-3">How to look after the birds</h1>
                                 <p className="w-75 mt-4">Please refer to the below pdf to for the
 				guide to take care of the birds</p>
-                                <a href="./assert/pdf/birds.pdf" target="_blank" data-aos="fade-up" className="btn btn-custom mt-2 mb-5 btn-primary">Download pdf</a>
+                                <a href={require("./assert/pdf/birds.pdf")} target="_blank" data-aos="fade-up" className="btn btn-custom mt-2 mb-5 btn-primary">Download pdf</a>
                             </div>
                             <div className="col-md-7 col-12 text-center" data-aos="fade-left">
                                 <img src={require("./assert/img/abt-img.png")} className="img-fluid pl-md-5 ml-md-5" style={style} alt="birs" />
