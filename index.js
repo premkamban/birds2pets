@@ -5,6 +5,7 @@ const app = express();
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Credentials", "true");
   res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   next();
@@ -28,8 +29,8 @@ app.post("/api/sendmail", (req, res) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "danvanthrikaconstruction@gmail.com",
-        pass: "Soma@89981"
+        user: "onhoverdesign@gmail.com",
+        pass: "onhover$"
       }
     });
 

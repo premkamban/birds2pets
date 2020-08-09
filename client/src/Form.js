@@ -26,7 +26,12 @@ export default class Form extends Component {
             email,
             phone,
             message
-        }, { headers: { "Access-Control-Allow-Origin": "*" } });
+        }, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        });
         console.log(this.state);
         e.target.reset();
         this.setState({ name: "", phone: "", email: "", message: "" });
